@@ -1,0 +1,48 @@
+.birthday_content {
+  margin: auto;
+  width: 20%;
+  border: 5px solid;
+  padding: 10px;
+  background-color: azure;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.result {
+  margin: auto;
+  width: 20%;
+  border: 5px solid;
+  padding: 10px;
+  background-color: tomato;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.text {
+  color: rgb(81, 138, 133);
+}
+.text-title {
+  color: goldenrod;
+}
+
+.ballons {
+  margin: 5px;
+}
+
+.form-item {
+  margin-bottom: 5px;
+}
+
+.form-button {
+  background-color: greenyellow;
+  border-radius: 50%;
+  box-shadow: black;
+  color: grey;
+  padding: 25px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}

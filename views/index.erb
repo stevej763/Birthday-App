@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/stylesheets/styles.css" rel="stylesheet">
+  <title>Birthday App</title>
+</head>
+<body>
+<div class="birthday_content">
+  <h2 class="text-title">Hello there!</h2>
+  <form action="/result" method="post">
+    <label class="text" for="user_name">What is your name?</label><br>
+    <input class="form-item" type="text" id="user_name" name="user_name"><br>
+    <label class="text" >When is your next birthday?</label><br>
+    <label class="text" for="birthday-month">Month:</label>
+    <select class="form-item" id="birthday-month" name="birthday_month">
+      <% @months.each_with_index do |month, index| %>
+        <option value="<%=index%>"><%=month%></option>
+      <% end  %>
+    </select><br>
+    <label class="text" for="birthday-day">Day:</label>
+    <input class="form-item" id="birthday-day" name="birthday_day" type="number" min="1" max="31"><br>
+
+    <input class="form-item form-button" type="submit" value="Go!">
+  </form>
+</div>
+
+
+</body>
+</html>
